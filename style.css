@@ -1,7 +1,7 @@
-body{
-  background-color: thistle;
-}
-
-h3{
-  font-style: italic;
+#result {
+  background: rgb(255, 246, 204);
+  border: 2px dotted gold;
+  font-size: 24px;
+  height: 60px;
+  margin-top: 10px;
 }

@@ -1,30 +1,36 @@
-# 12-1-Getting-Started-with-jQuery
+# 13-1-Processing-a-quiz-with-jQuery
 
 ## Video
 
-[Video](https://youtu.be/RAJVkOfR6U8) <-- Make sure to watch this video first<br>
+[Video](https://youtu.be/vmSyZc8vIZE) <-- Make sure to watch this video first<br>
 
 ## Directions
 
-### Step #1 - Include jQuery <br>
+### Step #1 - Add the event listener <br>
 
-It's time for your first jQuery challenge! <br><br>
-Start by adding a `<script>` tag that points at the jQuery JS file that is located at `https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js` <br><br> The `<script>` tag should be the final tag in your page, right before the closing `</body>` tag.
+You're going to make this quiz interactive with JS & jQuery. In this first step, add an event listener to the form's 'submit' event.
 <br><br>
-_Hint:_
-`<script src="..."></script>`
+_Hint:_<br>`$(_).on(_, _);`
 <br><br>
-### Step #2 - Add another script tag <br>
-Now add an empty `<script>` tag. You will use this one to write JS that uses jQuery, so you should put it under the `<script>` tag that brings in the jQuery library.
+### Step #2 - Check user answer <br>
+In this step, you should add code that figures out what answer the user picked and tells them if they got it right by outputting a message in the `#result` div.
 <br><br>
-_Hint:_
-`<script>`
-`</script>`
+_Hint:_<br>`var _ = _;`<br>
+`if (_ == 'hall') {`<br>
+`  $('#result').text(_);`<br>
+`}`
+<br><br>
+### Step #3 - Show the result <br>
+Now, let the user know when they got it wrong, by adding an else that outputs a message in the '#result' div.
+<br><br>
+_Hint:_<br>`if (_ == 'hall') {`<br>
+`...`<br>
+`} else {`<br>
+`  ...`<br>
+`}`
+<br><br>
+### Step #4 - Show the result <br>
+Select the right answer and click the button. Are you outputting a message to the screen? Once it's working, you can spin it off and add more questions, since you know so much about jQuery now!
+<br><br>
 
-### Step #3 - Replace the headings using jQuery <br>
-Inside the second `<script>` tag, use the line of code that we showed you to replace the headings with 'Web Dev is the best'. 
-<br><br>We will explain much more about how that line of code works in the next talk-through.
-<br><br>
-_Hint:_
-`$("h1").text()`
 
